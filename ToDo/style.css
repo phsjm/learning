@@ -1,0 +1,83 @@
+/* 1. 画面全体のリセットと中央寄せ */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* 左右中央 */
+    min-height: 100vh;
+}
+
+/* 2. 全体を囲む箱 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中身を縦一列に整列 */
+    width: 90%;
+    max-width: 400px;
+    padding-top: 60px;
+}
+
+/* 3. タイトル */
+h1 {
+    color: #333;
+    margin: 0 0 30px 0;
+    font-size: 2.5rem;
+}
+
+/* 4. 入力エリアのレイアウト */
+.todo-form {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* フォームに少し高級感を出す */
+}
+
+/* 入力欄（inputタグの設定が重要！） */
+#todo-input {
+    flex-grow: 1; /* 余ったスペースを全部使う */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px; /* 左だけ丸く */
+    font-size: 16px;
+    outline: none;
+}
+
+/* 追加ボタン */
+#add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 0 8px 8px 0; /* 右だけ丸く */
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #45a049;
+}
+
+/* 5. リスト（タスク）のデザイン */
+.todo-list {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    background: white;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5;
+
+}

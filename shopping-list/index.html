@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Smart Shopping Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Smart Shopping</h1>
+        
+        <div class="store-section">
+            <select id="storeSelect"></select>
+            <button id="addStoreBtn" class="small-btn">店を追加</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="itemInput" placeholder="商品名を入力">
+            <input type="text" id="unitInput" placeholder="単位" style="width: 60px;">
+            <button id="addBtn">追加</button>
+        </div>
+
+        <div id="tabContainer" class="tabs"></div>
+        <div id="listContainer" class="list-body"></div>
+        
+        <div class="footer-info">PC: Enterで追加 / 空欄時は無効</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

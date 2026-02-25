@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>結合子を使ったセレクタ</title>
+  <style>
+    /* 子孫セレクタ */
+    p span {
+      color: red;
+    }
+    /* 子セレクタ */
+    p > span {
+      text-decoration: underline;
+    }
+    /* 隣接セレクタ */
+    h2 + p {
+      font-weight: bold;
+    }
+    /* 間接セレクタ */
+    h2 ~ p {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1><span>結合子</span>を使ったセレクタ</h1>
+  <p><span>結合子</span>を使ったセレクタを学ぶと、<strong>より<span>詳細</span>にスタイルの適用先を指定できる</strong>ので、とても便利です。</p>
+
+  <h2>結合子を使ったセレクタ一覧</h2>
+  <p>組み合わせによって詳細にスタイルの適用先を指定</p>
+  <p>以下の種類があります</p>
+  <ul>
+    <li>子孫セレクタ</li>
+    <li>子セレクタ</li>
+    <li>間接セレクタ</li>
+    <li>隣接セレクタ</li>
+  </ul>
+</body>
+</html>

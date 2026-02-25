@@ -1,0 +1,108 @@
+/* 全体の背景を黒っぽく、文字を白くする */
+body {
+    background-color: #121212; /* 深い黒 */
+    color: #ffffff;            /* 文字は白 */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* 入力エリアをスッキリさせる */
+input {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+/* 追加ボタンを目立たせる（マネーフォワード風のオレンジ） */
+#add-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 合計カードを画像のようなデザインに */
+#total-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+/* 履歴リストのデザイン */
+#history-area {
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #1e1e1e;
+    margin-bottom: 8px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-left {
+    text-align: left;
+}
+
+.item-left small {
+    color: #888; /* 日付を少しグレーにして目立たなくする */
+    font-size: 0.8rem;
+}
+
+/* inputと同じデザインをselectにも適用 */
+input, select {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+/* 削除ボタンのデザイン */
+.delete-btn {
+    background-color: transparent; /* 背景を透明に */
+    border: 1px solid #ff4d4d;    /* 赤い枠線 */
+    color: #ff4d4d;               /* 赤い文字 */
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #ff4d4d;    /* ホバーした時に赤くする */
+    color: white;
+}
+
+/* 履歴の右側の配置調整 */
+.item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}

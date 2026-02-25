@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>セレクタの演習</title>
+  <style>
+
+    h1, h2 {
+      color: blue;
+    }
+
+    h1 + p {
+      color: green;
+    }
+
+    p > strong {
+      color: red;
+    }
+
+    #page-footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>セレクタの演習</h1>
+  <p class="lede">より詳細なスタイルを指定しよう</p>
+
+  <h2>セレクタ一覧</h2>
+  <p>どんな<strong>セレクタ</strong>があるかみてみよう！</p>
+  <ul>
+    <li><strong>ID</strong>セレクタ</li>
+    <li><strong>クラス</strong>セレクタ</li>
+    <li><strong>要素</strong>セレクタ</li>
+    <li><strong>ユニバーサル</strong>セレクタ</li>
+  </ul>
+
+  <h2>結合子を使ったセレクタ</h2>
+  <ul>
+    <li><strong>子孫</strong>セレクタ</li>
+    <li><strong>子</strong>セレクタ</li>
+    <li><strong>隣接</strong>セレクタ</li>
+    <li><strong>間接</strong>セレクタ</li>
+  </ul>
+
+  <footer id="page-footer">
+    <p>&copy; 2024 www.proglus.jp</p>
+  </footer>
+</body>
+</html>

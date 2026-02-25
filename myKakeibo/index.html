@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイ家計簿アプリ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div id="chart-container" style="width: 300px; margin: 20px auto;">
+    <canvas id="myChart"></canvas>
+</div>
+</head>
+<body>
+    <div id="input-area">
+        <input type="date" id="new-date">
+        <select id="new-category">
+            <option value="食費">食費</option>
+            <option value="交通費">交通費</option>
+            <option value="日用品">日用品</option>
+            <option value="娯楽">娯楽</option>
+            <option value="住居費">住居費</option>
+            <option value="その他">その他</option>
+        </select>
+        <input type="text" id="new-title" placeholder="内容（例：コンビニ）">
+        <input type="number" id="new-price" placeholder="金額を入力">
+        <button id="add-btn">追加</button>
+    </div>
+
+    <div id="total-card">
+        <h2>1月の合計</h2>
+        <p id="total-amount">計算中...</p>
+    </div>
+
+    <div id="history-area">
+        <h3>支出の履歴</h3>
+        <ul id="expense-list">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+}
+html {
+    font-family: serif;
+    color: #1f1b1b;
+}
+.text_brown {
+    color: #6d370e;
+}
+.hero {
+    background-image: url(../images/curry_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+main {
+    max-width: 640px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+nav {
+    padding: 20px;
+    background-color: #fff1ca;
+}
+.nav_title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+nav ul {
+    list-style-image: url(../images/list-marker.png);
+}
+nav > ul > li > a {
+    text-decoration: none;
+}
+nav > ul > li > a:link {
+    color: #1f1b1b;
+}
+nav > ul > li > a:visited {
+    color: #1f1b1b;
+}
+nav > ul > li > a:hover {
+    color: #6d370e;
+}
+nav > ul > li > a:active {
+    color: #6d370e;
+}
+section {
+    margin: 50px auto;
+}
+h2 {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 5px solid #6d370e;
+    border-bottom: 1px solid #6d370e;
+}
+h2 + p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.curry_image {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+footer {
+    padding: 20px;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #6d370e;
+}

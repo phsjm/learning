@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSグリッドレイアウト入門</title>
+    <style>
+        .container{
+            display: grid;
+            gap:16px; 
+        }
+        .fill{
+            grid-template-columns: repeat(auto-fill,minmax(130px,1fr));
+            grid-template-rows: repeat(auto-fill,minmax(130px,1fr));
+        }
+        .fit{
+            grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+            margin-top: 100px;
+        }
+        .item{
+            background-color: #ffa61c;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container fill">
+        <div class="item">intem01</div>
+        <div class="item">intem02</div>
+        <div class="item">intem03</div>
+        <div class="item">intem04</div>
+        <div class="item">intem05</div>
+        <div class="item">intem06</div>
+    </div>
+        <div class="container fit">
+        <div class="item">intem01</div>
+        <div class="item">intem02</div>
+        <div class="item">intem03</div>
+        <div class="item">intem04</div>
+        <div class="item">intem05</div>
+        <div class="item">intem06</div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* common */
+body {
+  margin: 0;
+};
+
+img {
+  vertical-align: bottom;
+};
+
+h1, h2, h3, p {
+  margin: 0;
+};
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 4%;
+};
+
+/* header */
+header {
+    text-align: center
+};
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+};

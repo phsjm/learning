@@ -70,3 +70,28 @@ h2 {
   font-size: 14px;
   font-weight: bold;
 }
+
+.works_box {
+  max-width: 450px;
+  margin: 40px auto;
+}
+
+.works_image {
+  width: 100%;
+  height: auto;
+}
+
+.works_box h3 {
+  margin-top: 10px;
+}
+
+.works_box p {
+  margin-top: 8px;
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
